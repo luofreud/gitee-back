@@ -1,0 +1,37 @@
+name: mobile_im_sdk
+description: MobileIMSDK 的 Flutter 插件实现，统一的 TCP/UDP/WebSocket 即时通讯客户端 SDK,API 风格对标 MobileIMSDK Android/iOS 官方版本。
+version: 1.0.0
+homepage: https://github.com/JackJiang2011/MobileIMSDK
+
+environment:
+  sdk: '>=2.17.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  web_socket_channel: ^2.4.0
+  connectivity_plus: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: net.im52.mobileimsdk.flutter
+        pluginClass: MobileImSdkPlugin
+      ios:
+        pluginClass: MobileImSdkPlugin
+      macos:
+        pluginClass: MobileImSdkPlugin
+      windows:
+        pluginClass: MobileImSdkPlugin
+      linux:
+        pluginClass: MobileImSdkPlugin
+      web:
+        pluginClass: MobileImSdkWeb
+        fileName: mobile_im_sdk_web.dart

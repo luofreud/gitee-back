@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 网络通信权限(对应 MobileIMSDK Android 客户端) -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <!-- 唤醒锁(防止后台心跳被杀) -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!-- 前后台切换时保留连接(可选) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+</manifest>

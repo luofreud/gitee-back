@@ -1,0 +1,11 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    always_specify_types: true
+    avoid_print: true
+    prefer_final_locals: true
+    camel_case_types: true
+    snake_case_files: true
+    unnecessary_this: true
+    require_trailing_commas: true

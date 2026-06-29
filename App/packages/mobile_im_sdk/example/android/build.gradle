@@ -1,0 +1,18 @@
+// android/build.gradle (项目级)
+// 适配 Gradle 8.12 / AGP 8.x: 子项目用 subprojects{}, 仓库声明在 settings.gradle
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.layout.buildDirectory
+}
