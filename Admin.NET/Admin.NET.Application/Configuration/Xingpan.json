@@ -1,0 +1,14 @@
+{
+  "$schema": "https://gitee.com/dotnetchina/Furion/raw/v4/schemas/v4/furion-schema.json",
+
+  "Xingpan": {
+    "ApiUrl": "http://www.xingpan.vip/astrology/",
+    "LuckApiUrl": "https://go.xingpan.vip/astrology/",
+    "AccessToken": "256745d6cc01a054a55e669dfcd201c0",
+    "LuckAccessToken": "989f888c4283e2cc2d8a5aa4af60932c"
+  },
+
+  "ImServer": {
+    "ApiUrl": "http://localhost:8080"
+  }
+}
